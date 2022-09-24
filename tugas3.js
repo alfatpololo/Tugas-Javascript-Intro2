@@ -3,7 +3,7 @@ const pilihNilai = (awal, akhir, array) => {
     
     array.sort((a, b) => a - b);
     if (awal < akhir) {
-        if (array.length < array[4]) {
+        if (array.length < 4) {
             for (let i = 0; i < akhir; i++) {
                 if (array[i] >= awal && array[i] <= akhir) {
                     hasil.push(array[i]);
